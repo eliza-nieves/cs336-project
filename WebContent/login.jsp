@@ -4,12 +4,16 @@
 <html>
    <head>
       <title>Login Form</title>
+      <link href="${pageContext.request.contextPath}/styles.css" type="text/css" rel="stylesheet" />
    </head>
    <body>
+   <div id="login">
+   <h1>Log In</h1>
      <form action="displayLoginDetails.jsp" method="POST">
        Username: <input type="text" name="username"/> <br/>
-       Password:<input type="password" name="password"/> <br/>
-       <input type="submit" value="Submit"/>
+       Password: <input type="password" name="password"/> <br/>
+       <input type="submit" class="btn" value="Submit"/>
      </form>
+     </div>
    </body>
 </html>
